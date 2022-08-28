@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'diba';
+    src: url('../Font/diba.ttf');
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    font-family: 'diba';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fullscreen-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#all-pages {
+    position: relative;
+    top: 0;
+    transition: all 800ms ease;
+    /* height set by js */
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+}
+
+#all-pages .page:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url() center / cover;
+}
+
+#all-pages .page:nth-child(2) {
+    background: #f8f9fa,
+        url() center / cover;
+}
+
+#all-pages .page:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 8, 8, 0.808)),
+        url() center / cover;
+}
+
+.text-container {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    margin: 0 40px;
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(-50%);
+    transition: all 3s ease;
+}
+
+.text-container.in-sight {
+    opacity: 1;
+    visibility: visible;
+}
+
+.text-container h2 {
+    font-size: 6vh;
+    text-transform: uppercase;
+}
+
+.text-container p {
+    font-size: 2vh;
+    padding: 1em 0;
+}
+
+.nav-dot-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.nav-dot {
+    width: 20px;
+    height: 30px;
+    padding: 20px 0px;
+    margin: auto;
+}
+
+.nav-dot span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    transition: all 200ms ease;
+    margin: auto;
+}
+
+.nav-dot span:hover {
+    width: 12px;
+    height: 12px;
+}
+
+.nav-dot.dot-active span {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* -------------- */
+/* ==== Cards using Bootstrap === */
+
+#cards .card {
+    border-radius: 20px;
+    min-height: 100%;
+}
+
+#cards .card .user-picture img {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    background: #f8f9fa !important;
+    padding: 10px;
+}
+
+#cards .card .user-content {
+    text-align: right;
+    padding: 0 10px;
+}
+
+.a-link {
+    color: #144dc9;
+}
