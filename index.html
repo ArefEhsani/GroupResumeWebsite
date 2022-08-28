@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>صفحه اصلی</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
@@ -17,189 +17,198 @@
 </head>
 
 <body>
-
-    <div class="fullscreen-container">
-        <div id="all-pages">
-            <section class="page">
-                <div class="text-container">
-                    <h2>اسم گروه</h2>
-                    <p>
-                        بخش 1
-                    </p>
+    <header class=" bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">اعضای تیم </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">درباره ما</a>
+                            </li>
+                        </ul>
+                        <div class="position-relative">
+                            <form name="search">
+                                <input type="text" class="input" placeholder="جستجو..." required>
+                            </form>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </nav>
+        </div>
+    </header>
 
 
-
-
-            <section class="page">
-                <div class="text-container">
-                    <h2 class="text-dark">اعضای تیم</h2>
-
-
-
-
-                    <p>
-                        <!-- Ui cards -->
-                        <div id="cards">
-                            <div class="container py-2">
-                                <!-- cards -->
-                                <div class="row">
-
-                                    <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
-                                        <div class="card shadow-sm border-0">
-                                            <div class="card-body">
-                                                <div class="user-picture">
-                                                    <img src="https://picsum.photos/400"
-                                                        class="shadow-sm rounded-circle" height="130" width="130">
-                                                </div>
-                                                <div class="user-content">
-                                                    <h5 class="user-name">عارف احسانی</h5>
-                                                    <span class=" text-capitalize text-muted small skil">
-                                                        Front developer
-                                                    </span>
-                                                    <p class="small text-muted mb-0">
-                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                                                        در ستون و سطرآنچنان که لازم است
-                                                        <span class="a-link">بیشتر...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
-                                        <div class="card shadow-sm border-0">
-                                            <div class="card-body">
-                                                <div class="user-picture">
-                                                    <img src="https://picsum.photos/390"
-                                                        class="shadow-sm rounded-circle" height="130" width="130">
-                                                </div>
-                                                <div class="user-content">
-                                                    <h5 class="user-name">افشار شریفی</h5>
-                                                    <span class=" text-capitalize text-muted small skil">
-                                                        Backend developer
-                                                    </span>
-                                                    <p class="small text-muted mb-0">
-                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                                                        در ستون و سطرآنچنان که لازم است
-                                                        <span class="a-link">بیشتر...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
-                                        <div class="card shadow-sm border-0">
-                                            <div class="card-body">
-                                                <div class="user-picture">
-                                                    <img src="https://picsum.photos/380"
-                                                        class="shadow-sm rounded-circle" height="130" width="130">
-                                                </div>
-                                                <div class="user-content">
-                                                    <h5 class="user-name">محمد محمدیان</h5>
-                                                    <span class=" text-capitalize text-muted small skil">
-                                                        full stack developer
-                                                    </span>
-                                                    <p class="small text-muted mb-0">
-                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                                                        در ستون و سطرآنچنان که لازم است
-                                                        <span class="a-link">بیشتر...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
-                                        <div class="card shadow-sm border-0">
-                                            <div class="card-body">
-                                                <div class="user-picture">
-                                                    <img src="https://picsum.photos/400"
-                                                        class="shadow-sm rounded-circle" height="130" width="130">
-                                                </div>
-                                                <div class="user-content">
-                                                    <h5 class="user-name">عارف احسانی</h5>
-                                                    <span class=" text-capitalize text-muted small skil">
-                                                        Front developer
-                                                    </span>
-                                                    <p class="small text-muted mb-0">
-                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                                                        در ستون و سطرآنچنان که لازم است
-                                                        <span class="a-link">بیشتر...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
-                                        <div class="card shadow-sm border-0">
-                                            <div class="card-body">
-                                                <div class="user-picture">
-                                                    <img src="https://picsum.photos/390"
-                                                        class="shadow-sm rounded-circle" height="130" width="130">
-                                                </div>
-                                                <div class="user-content">
-                                                    <h5 class="user-name">افشار شریفی</h5>
-                                                    <span class=" text-capitalize text-muted small skil">
-                                                        Backend developer
-                                                    </span>
-                                                    <p class="small text-muted mb-0">
-                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                                                        در ستون و سطرآنچنان که لازم است
-                                                        <span class="a-link">بیشتر...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
-                                        <div class="card shadow-sm border-0">
-                                            <div class="card-body">
-                                                <div class="user-picture">
-                                                    <img src="https://picsum.photos/380"
-                                                        class="shadow-sm rounded-circle" height="130" width="130">
-                                                </div>
-                                                <div class="user-content">
-                                                    <h5 class="user-name">محمد محمدیان</h5>
-                                                    <span class=" text-capitalize text-muted small skil">
-                                                        full stack developer
-                                                    </span>
-                                                    <p class="small text-muted mb-0">
-                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                                                        در ستون و سطرآنچنان که لازم است
-                                                        <span class="a-link">بیشتر...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
+    <main>
+        <div class="container">
+            <div class="container py-2">
+                <div id="cards">
+                    <h2 class="mt-5">اعضای تیم</h2>
+                    <!-- team member -->
+                    <div class="row">
+                        <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <div class="user-picture">
+                                        <img src="https://picsum.photos/400" class="rounded-circle">
+                                    </div>
+                                    <div class="user-content">
+                                        <h5 class="user-name">عارف احسانی</h5>
+                                        <span class=" text-capitalize text-muted small skil">
+                                            Front developer
+                                        </span>
+                                        <p class="small text-muted mb-0">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                            با
+                                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                            مجله
+                                            در ستون و سطرآنچنان که لازم است
+                                            <span class="a-link">بیشتر...</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </p>
-
-
-
-
-
+                        </a>
+                        <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <div class="user-picture">
+                                        <img src="https://picsum.photos/390" class="rounded-circle">
+                                    </div>
+                                    <div class="user-content">
+                                        <h5 class="user-name">افشار شریفی</h5>
+                                        <span class=" text-capitalize text-muted small skil">
+                                            Backend developer
+                                        </span>
+                                        <p class="small text-muted mb-0">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                            با
+                                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                            مجله
+                                            در ستون و سطرآنچنان که لازم است
+                                            <span class="a-link">بیشتر...</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <div class="user-picture">
+                                        <img src="https://picsum.photos/370" class="rounded-circle">
+                                    </div>
+                                    <div class="user-content">
+                                        <h5 class="user-name">محمد محمدیان</h5>
+                                        <span class=" text-capitalize text-muted small skil">
+                                            full stack developer
+                                        </span>
+                                        <p class="small text-muted mb-0">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                            با
+                                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                            مجله
+                                            در ستون و سطرآنچنان که لازم است
+                                            <span class="a-link">بیشتر...</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <div class="user-picture">
+                                        <img src="https://picsum.photos/405" class="rounded-circle">
+                                    </div>
+                                    <div class="user-content">
+                                        <h5 class="user-name">عارف احسانی</h5>
+                                        <span class=" text-capitalize text-muted small skil">
+                                            Front developer
+                                        </span>
+                                        <p class="small text-muted mb-0">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                            با
+                                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                            مجله
+                                            در ستون و سطرآنچنان که لازم است
+                                            <span class="a-link">بیشتر...</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <div class="user-picture">
+                                        <img src="https://picsum.photos/450" class="rounded-circle">
+                                    </div>
+                                    <div class="user-content">
+                                        <h5 class="user-name">افشار شریفی</h5>
+                                        <span class=" text-capitalize text-muted small skil">
+                                            Backend developer
+                                        </span>
+                                        <p class="small text-muted mb-0">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                            با
+                                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                            مجله
+                                            در ستون و سطرآنچنان که لازم است
+                                            <span class="a-link">بیشتر...</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <div class="user-picture">
+                                        <img src="https://picsum.photos/350" class="rounded-circle">
+                                    </div>
+                                    <div class="user-content">
+                                        <h5 class="user-name">محمد محمدیان</h5>
+                                        <span class=" text-capitalize text-muted small skil">
+                                            full stack developer
+                                        </span>
+                                        <p class="small text-muted mb-0">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                            با
+                                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                                            مجله
+                                            در ستون و سطرآنچنان که لازم است
+                                            <span class="a-link">بیشتر...</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </section>
-            <section class="page">
-                <div class="text-container">
-                    <h2>The third page</h2>
-                    <p>
-                        بخش 3
-                    </p>
-                </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </main>
+
 
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
