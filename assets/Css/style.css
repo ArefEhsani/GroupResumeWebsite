@@ -3,9 +3,11 @@
     src: url('../Font/diba.ttf');
 }
 
+html,
 body {
     width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 * {
@@ -15,31 +17,11 @@ body {
     box-sizing: border-box;
 }
 
-/* ==== Cards using Bootstrap === */
-
-#cards .card {
-    border-radius: 20px;
-    min-height: 100%;
-    background: rgb(228, 228, 228);
-}
-
-#cards .card .user-picture img {
-    position: absolute;
-    top: -30%;
-    left: 10%;
-    border: 10px solid #fff;
-    width: 100px;
-    height: 100px;
-
-}
-
-#cards .card .user-content {
-    text-align: right;
-    padding: 0 10px;
-}
-
-.a-link {
-    color: #144dc9;
+/* header */
+header .active {
+    background-color: #437fff;
+    color: #fff !important;
+    border-radius: 10px;
 }
 
 /* search box */
@@ -66,4 +48,114 @@ header .fa-search {
     transform: translate(-50%, -50%);
     font-size: 26px;
     color: #2d30ff;
+}
+
+/* footer */
+.icon-a {
+    color: #888;
+}
+
+footer i {
+    font-size: 1.4em;
+}
+
+
+
+/* team group */
+#cards .card {
+    border-radius: 20px;
+    min-height: 100%;
+    background: rgb(228, 228, 228);
+}
+
+#cards .card .user-picture img {
+    position: absolute;
+    top: -30%;
+    left: 10%;
+    border: 10px solid #fff;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
+
+#cards .card .user-content {
+    text-align: right;
+    padding: 0 10px;
+}
+
+.a-link {
+    color: #144dc9;
+}
+
+
+/* member */
+.member-picture {
+    height: 50vh;
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 50%;
+    background: url("https://picsum.photos/400") center/cover;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.member-picture:hover {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px !important;
+    height: 50vh;
+}
+
+@media screen and (max-width:768px) {
+    .member-picture {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 25px;
+        height: 50vh;
+        margin-bottom: 20px !important;
+    }
+}
+
+.item-member {
+    direction: ltr;
+}
+
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    direction: ltr;
+}
+
+.skill .skill-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.skill label {
+    color: #444;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.skill progress {
+    background-color: transparent;
+    width: 100%;
+    max-width: 400px;
+}
+
+.skill progress::-moz-progress-bar {
+    background-color: #eee;
+}
+
+.skill progress::-webkit-progress-value {
+    background-color: #773cff;
+    border-radius: 4px;
+}
+
+.skill progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 4px;
 }
