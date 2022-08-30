@@ -17,9 +17,19 @@ body {
     box-sizing: border-box;
 }
 
+:root {
+    --color-purple: #773cff;
+    --color-purple: #773cff;
+}
+
+.bg-purple {
+    background-color: var(--color-purple);
+    color: #fff;
+}
+
 /* header */
 header .active {
-    background-color: #437fff;
+    background-color: var(--color-purple);
     color: #fff !important;
     border-radius: 10px;
 }
@@ -29,9 +39,9 @@ header form .input {
     padding: 10px 50px 10px 10px;
     width: 130px;
     height: 40px;
-    border: 4px solid #2d4cff;
+    border: 4px solid var(--color-purple);
     border-radius: 50px;
-    color: #302dff;
+    color: var(--color-purple);
     outline: none;
     transition: .5s;
 }
@@ -47,7 +57,7 @@ header .fa-search {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 26px;
-    color: #2d30ff;
+    color: var(--color-purple);
 }
 
 /* footer */
@@ -55,9 +65,14 @@ header .fa-search {
     color: #888;
 }
 
+.icon-a:hover {
+    color: var(--color-purple);
+}
+
 footer i {
     font-size: 1.4em;
 }
+
 
 
 
@@ -83,8 +98,12 @@ footer i {
     padding: 0 10px;
 }
 
+.user-name {
+    color: var(--color-purple);
+}
+
 .a-link {
-    color: #144dc9;
+    color: var(--color-purple);
 }
 
 
@@ -94,7 +113,7 @@ footer i {
     max-height: 400px;
     max-width: 400px;
     border-radius: 50%;
-    background: url("https://picsum.photos/400") center/cover;
+    background: url("https://picsum.photos/1280") center/cover;
     margin-bottom: 20px;
     transition: .5s;
 }
@@ -151,7 +170,7 @@ footer i {
 }
 
 .skill progress::-webkit-progress-value {
-    background-color: #773cff;
+    background-color: var(--color-purple);
     border-radius: 4px;
 }
 
