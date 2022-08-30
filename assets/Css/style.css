@@ -80,7 +80,7 @@ footer i {
 #cards .card {
     border-radius: 20px;
     min-height: 100%;
-    background: rgb(228, 228, 228);
+    background: #f8f9fa;
 }
 
 #cards .card .user-picture img {
