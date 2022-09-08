@@ -30,6 +30,40 @@ body {
     color: var(--color-white);
 }
 
+a.btn.btn-purple {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    border: none;
+}
+
+a.btn.btn-purple:hover {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    opacity: .9;
+    border: none;
+
+}
+
+/* ---------------------------       scrollbar         --------------------------- */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
 /* ---------------------------       Header         --------------------------- */
 header .nav-link {
     padding: 8px 20px;
@@ -149,29 +183,16 @@ footer i:hover {
 
 /* ---------------------------       Member         --------------------------- */
 .member-picture {
-    height: 50vh;
-    max-height: 400px;
-    max-width: 400px;
-    border-radius: 50%;
+    height: auto;
+    border-radius: 8px;
     background: url("https://picsum.photos/1280") center/cover;
     margin-bottom: 20px;
     transition: .5s;
 }
 
-.member-picture:hover {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 8px !important;
-    height: 50vh;
-}
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:991px) {
     .member-picture {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 25px;
         height: 50vh;
-        margin-bottom: 20px !important;
     }
 }
 
@@ -179,6 +200,30 @@ footer i:hover {
     direction: ltr;
 }
 
+.item-member a {
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+#member .skil::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    border-radius: 8px;
+    background: var(--color-purple);
+    animation: move 5s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        width: 80px;
+    }
+
+    70% {
+        width: 10px;
+    }
+}
 
 .skill {
     display: flex;
@@ -202,7 +247,6 @@ footer i:hover {
 .skill progress {
     background-color: transparent;
     width: 100%;
-    max-width: 400px;
 }
 
 .skill progress::-moz-progress-bar {

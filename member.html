@@ -17,16 +17,19 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class=" bg-light">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">logo</a>
+                    <!-- brand name -->
+                    <a class="navbar-brand" href="#">Purple Team</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- items header -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -48,26 +51,33 @@
                                 <a class="nav-link" href="#">وبلاگ</a>
                             </li>
                         </ul>
+                        <!-- search box -->
                         <div class="position-relative">
                             <form name="search">
                                 <input type="text" class="input" placeholder="جستجو..." required>
-                            </form>
-                            <i class="fas fa-search"></i>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+
                         </div>
+                        </form>
+                        <!-- <i class="fas fa-search"></i> -->
+
                     </div>
                 </div>
-            </nav>
+        </div>
+        </nav>
         </div>
     </header>
 
-    <main>
+    <!-- main -->
+    <main id="member">
         <div class="container mt-4">
-            <!--  <a href="#" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block"> -->
             <div class="card shadow-sm border-1 p-3">
-                <div class="card-body">
-                    <div class="member-picture m-auto m-md-2"></div>
-                    <div class="user-content">
-                        <!-- info -->
+                <div class="row card-body">
+                    <!-- profile -->
+                    <div class="col-lg-6 member-picture"></div>
+                    <!-- info -->
+                    <div class="col-lg-6 user-content px-4">
+                        <!-- name -->
                         <h5 class="user-name">عارف احسانی</h5>
                         <span class=" text-capitalize text-muted skil">
                             Front developer
@@ -114,126 +124,54 @@
                         <div class="bg-light p-3 mb-3 rounded-3">
                             <div class="item-member">
                                 <i class="fa-solid fa-envelope ms-2"></i>
-                                <span>MyEmail@gmail.com</span>
+                                <span>Email :</span>
+                                <a href="mailto:example@gmail.com">example@gmail.com</a>
                             </div>
                             <div class="item-member">
                                 <i class="fa-brands fa-github ms-2"></i>
-                                <span>ArefEhsani</span>
+                                <span>Github :</span>
+                                <a href="">ArefEhsani</a>
                             </div>
                             <div class="item-member">
                                 <i class="fa-brands fa-instagram ms-2"></i>
-                                <span>Instagram</span>
+                                <span>Instagram :</span>
+                                <a href="">Aref.Ehsanii</a>
                             </div>
                             <div class="item-member">
                                 <i class="fa-brands fa-whatsapp ms-2"></i>
-                                <span>Telegram</span>
+                                <span>Telegram :</span>
+                                <a href="">@Tornardo</a>
                             </div>
                         </div>
-
-                        <div class="protfolil-member">
-                            <h5>نمونه کارها</h5>
-                            <div class="row g-2">
-
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="https://picsum.photos/400?grayscale" class="card-img-top"
-                                            width="150px">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Project Name</h5>
-                                            <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                            <a href="#" class="btn bg-purple">مشاهده</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="https://picsum.photos/650?grayscale" class="card-img-top"
-                                            width="150px">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Project Name</h5>
-                                            <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                            <a href="#" class="btn bg-purple">مشاهده</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="https://picsum.photos/600?grayscale" class="card-img-top"
-                                            width="150px">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Project Name</h5>
-                                            <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                            <a href="#" class="btn bg-purple">مشاهده</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="https://picsum.photos/550?grayscale" class="card-img-top"
-                                            width="150px">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Project Name</h5>
-                                            <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                            <a href="#" class="btn bg-purple">مشاهده</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="https://picsum.photos/450?grayscale" class="card-img-top"
-                                            width="150px">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Project Name</h5>
-                                            <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                            <a href="#" class="btn bg-purple">مشاهده</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="https://picsum.photos/500?grayscale" class="card-img-top"
-                                            width="150px">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Project Name</h5>
-                                            <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                            <a href="#" class="btn bg-purple">مشاهده</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-- footer -->
     <footer class="bg-light">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+                <!-- copy right -->
                 <div class="col-md-4 d-flex align-items-center">
-                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none">
-                        <i class="fa-solid fa-bolt"></i>
-                    </a>
                     <span class="mb-3 mb-md-0 text-muted">© 2022 ,Aref Ehsani</span>
                 </div>
-
+                <!-- social network -->
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <!-- telegram -->
                     <li class="me-3">
                         <a class="icon-a" href="#">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
                     </li>
+                    <!-- instagram -->
                     <li class="me-3">
                         <a class="icon-a" href="#">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
+                    <!-- whatsapp -->
                     <li class="me-3">
                         <a class="icon-a" href="#">
                             <i class="fa-brands fa-whatsapp"></i>
@@ -244,11 +182,11 @@
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle -->
+    <!-- Bootstrap Bundle cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
-
+    <!-- javascript -->
     <script src="./assets/Js/javascript.js"></script>
 </body>
 
