@@ -1,3 +1,4 @@
+/* add font */
 @font-face {
     font-family: 'diba';
     src: url('../Font/diba.ttf');
@@ -19,78 +20,117 @@ body {
 
 :root {
     --color-purple: #773cff;
-    --color-purple: #773cff;
+    --color-white: #fff;
+    --color-grey: #888;
+    --color-light: #eee;
 }
 
 .bg-purple {
     background-color: var(--color-purple);
-    color: #fff;
+    color: var(--color-white);
 }
 
-/* header */
+/* ---------------------------       Header         --------------------------- */
+header .nav-link {
+    padding: 8px 20px;
+}
+
 header .active {
     background-color: var(--color-purple);
-    color: #fff !important;
-    border-radius: 10px;
+    color: var(--color-white) !important;
+    border-radius: 8px;
+}
+
+header .active:hover {
+    opacity: .9;
+}
+
+header .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 100% 0 0 0;
+    background: var(--color-purple);
+    transition: width .3s;
+}
+
+header .nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
 
 /* search box */
 header form .input {
-    padding: 10px 50px 10px 10px;
-    width: 130px;
+    padding: 10px 10px 10px 40px;
+    max-width: 130px;
     height: 40px;
     border: 4px solid var(--color-purple);
-    border-radius: 50px;
+    border-radius: 8px;
     color: var(--color-purple);
     outline: none;
     transition: .5s;
+    position: relative;
 }
 
 header form:hover input,
 header form input:valid {
-    width: 350px;
-    border-radius: 10px;
+    max-width: 350px;
 }
 
-header .fa-search {
+header button[type=submit] {
     position: absolute;
+    background-color: transparent;
+    border: none;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -42%);
+    left: 22px;
     font-size: 26px;
     color: var(--color-purple);
 }
 
-/* footer */
-.icon-a {
-    color: #888;
+@media screen and (max-width:991px) {
+    header form .input {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header form:hover input,
+    header form input:valid {
+        max-width: 100%;
+    }
 }
 
-.icon-a:hover {
-    color: var(--color-purple);
-}
-
+/* ---------------------------       Footer         --------------------------- */
 footer i {
     font-size: 1.4em;
+    color: var(--color-grey);
+    transition: .3s;
+}
+
+footer i:hover {
+    transform: rotate(360deg);
+    color: var(--color-purple);
+    font-size: 2em;
 }
 
 
 
-
-/* team group */
+/* ---------------------------       Team Group         --------------------------- */
 #cards .card {
-    border-radius: 20px;
+    border-radius: 8px;
     min-height: 100%;
-    background: #f8f9fa;
+    background: var(--color-light);
 }
 
 #cards .card .user-picture img {
     position: absolute;
     top: -30%;
     left: 10%;
-    border: 10px solid #fff;
+    border: 10px solid var(--color-white);
     width: 100px;
     height: 100px;
-    background: #fff;
+    background: var(--color-white);
 }
 
 #cards .card .user-content {
@@ -107,7 +147,7 @@ footer i {
 }
 
 
-/* member */
+/* ---------------------------       Member         --------------------------- */
 .member-picture {
     height: 50vh;
     max-height: 400px;
@@ -154,7 +194,7 @@ footer i {
 }
 
 .skill label {
-    color: #444;
+    color: var(--color-grey);
     text-transform: uppercase;
     font-size: small;
 }
@@ -166,7 +206,7 @@ footer i {
 }
 
 .skill progress::-moz-progress-bar {
-    background-color: #eee;
+    background-color: var(--color-light);
 }
 
 .skill progress::-webkit-progress-value {
@@ -175,6 +215,6 @@ footer i {
 }
 
 .skill progress::-webkit-progress-bar {
-    background-color: #eee;
+    background-color: var(--color-light);
     border-radius: 4px;
 }
