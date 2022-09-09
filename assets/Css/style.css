@@ -54,6 +54,22 @@ img:hover {
     filter: brightness(70%);
 }
 
+h2 {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: var(--color-purple);
+}
+
 /* ---------------------------       scrollbar         --------------------------- */
 ::-webkit-scrollbar {
     width: 5px;
@@ -162,6 +178,14 @@ footer i:hover {
 #cards .card {
     min-height: 100%;
     background: var(--color-grey-input);
+    transition: .3s;
+
+}
+
+#cards .card:hover,
+#cards .card:hover .user-picture img {
+    outline: 2px solid #773cff;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.459);
 }
 
 #cards .card .user-picture img {
@@ -271,9 +295,12 @@ footer i:hover {
 
 /* ---------------------------       Contact us         --------------------------- */
 .contact-box {
-    text-align: center;
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
     display: flex;
+}
+
+.contact-box h2 {
+    margin-bottom: 15px;
 }
 
 .img-contact {
@@ -286,24 +313,6 @@ footer i:hover {
     height: 100%;
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
     transition: .3s;
-}
-
-.contact-box h2 {
-    position: relative;
-    padding: 0 0 10px;
-    margin-bottom: 10px;
-}
-
-.contact-box h2:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: var(--color-purple);
 }
 
 .field {
