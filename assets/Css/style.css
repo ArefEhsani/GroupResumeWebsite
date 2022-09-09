@@ -16,12 +16,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 8px;
 }
 
 :root {
     --color-purple: #773cff;
     --color-white: #fff;
     --color-grey: #888;
+    --color-grey-input: rgba(230, 230, 230, 0.6);
     --color-light: #eee;
 }
 
@@ -42,6 +44,14 @@ body {
     opacity: .9;
     border: none;
 
+}
+
+img {
+    transition: .3s;
+}
+
+img:hover {
+    filter: brightness(70%);
 }
 
 /* ---------------------------       scrollbar         --------------------------- */
@@ -72,7 +82,6 @@ header .nav-link {
 header .active {
     background-color: var(--color-purple);
     color: var(--color-white) !important;
-    border-radius: 8px;
 }
 
 header .active:hover {
@@ -100,7 +109,6 @@ header form .input {
     max-width: 130px;
     height: 40px;
     border: 4px solid var(--color-purple);
-    border-radius: 8px;
     color: var(--color-purple);
     outline: none;
     transition: .5s;
@@ -152,9 +160,8 @@ footer i:hover {
 
 /* ---------------------------       Team Group         --------------------------- */
 #cards .card {
-    border-radius: 8px;
     min-height: 100%;
-    background: var(--color-light);
+    background: var(--color-grey-input);
 }
 
 #cards .card .user-picture img {
@@ -165,6 +172,7 @@ footer i:hover {
     width: 100px;
     height: 100px;
     background: var(--color-white);
+    filter: brightness(100%);
 }
 
 #cards .card .user-content {
@@ -184,7 +192,6 @@ footer i:hover {
 /* ---------------------------       Member         --------------------------- */
 .member-picture {
     height: auto;
-    border-radius: 8px;
     background: url("https://picsum.photos/1280") center/cover;
     margin-bottom: 20px;
     transition: .5s;
@@ -210,7 +217,6 @@ footer i:hover {
     display: block;
     width: 80px;
     height: 5px;
-    border-radius: 8px;
     background: var(--color-purple);
     animation: move 5s ease-in-out infinite;
 }
@@ -263,22 +269,24 @@ footer i:hover {
     border-radius: 4px;
 }
 
-/* ........................................................ */
+/* ---------------------------       Contact us         --------------------------- */
 .contact-box {
     text-align: center;
-    background-color: #fff;
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
-    padding: 20px;
+    display: flex;
 }
 
-.left {
-    background: url("https://picsum.photos/400") no-repeat center;
-    background-size: cover;
+.img-contact {
+    padding: 0;
+    position: relative;
+}
+
+.img-contact img {
     width: 100%;
-    height: 200px;
+    height: 100%;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    transition: .3s;
 }
-
 
 .contact-box h2 {
     position: relative;
@@ -300,14 +308,17 @@ footer i:hover {
 
 .field {
     width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0);
+    border: 1px solid transparent;
     outline: none;
-    background-color: rgba(230, 230, 230, 0.6);
+    background-color: var(--color-grey-input);
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
-    border-radius: 8px;
+}
+
+.field::placeholder {
+    color: var(--color-grey);
 }
 
 .field:hover {
@@ -318,8 +329,7 @@ textarea {
     min-height: 150px;
 }
 
-
 .field:focus {
-    border: 2px solid var(--color-purple);
-    background-color: #fff;
+    border: 1px solid var(--color-purple);
+    background-color: var(--color-white);
 }
