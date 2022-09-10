@@ -11,6 +11,8 @@
         integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
     <!-- icon fontawesome -->
     <script src="https://kit.fontawesome.com/4d4ae78d4a.js" crossorigin="anonymous"></script>
+    <!-- slider js library -->
+    <link rel="stylesheet" href="./assets/splide-library/dist/css/themes/splide-sea-green.min.css">
     <!-- css style -->
     <link rel="stylesheet" href="./assets/Css/style.css">
 </head>
@@ -111,6 +113,8 @@
                 </div>
             </div>
         </section>
+        <!-- parallax -->
+        <div class="parallax one"></div>
         <!-- Team Group -->
         <section>
             <div class="container py-2">
@@ -120,7 +124,7 @@
                     <!-- team member -->
                     <div class="row">
                         <a href="./member.html" class="col-lg-4 col-md-6 mb-4 pt-5 text-decoration-none d-block">
-                            <div class="card">
+                            <div class="card border-0">
                                 <div class="card-body">
                                     <div class="user-picture">
                                         <img src="https://picsum.photos/400" class="rounded-circle">
@@ -266,29 +270,80 @@
             <div class="container py-2">
                 <!-- title -->
                 <h2 class="mt-5"> نمونه کار ها </h2>
-
-                <div class="protfolil-member">
-                    <div class="row g-2">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card">
-                                <img src="https://picsum.photos/450?grayscale" class="card-img-top" width="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Name</h5>
-                                    <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                    <a href="#" class="btn btn-purple">مشاهده</a>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <img src="https://picsum.photos/500/350" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Name 1</h5>
+                                        <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
+                                        <a href="#" class="btn btn-purple">مشاهده</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card">
-                                <img src="https://picsum.photos/500?grayscale" class="card-img-top" width="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Name</h5>
-                                    <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
-                                    <a href="#" class="btn btn-purple">مشاهده</a>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <img src="https://picsum.photos/501//350" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Name 2</h5>
+                                        <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
+                                        <a href="#" class="btn btn-purple">مشاهده</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <img src="https://picsum.photos/509/350" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Name 3</h5>
+                                        <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
+                                        <a href="#" class="btn btn-purple">مشاهده</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <img src="https://picsum.photos/510/350" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Name 4</h5>
+                                        <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
+                                        <a href="#" class="btn btn-purple">مشاهده</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <img src="https://picsum.photos/500/350" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Name 5</h5>
+                                        <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
+                                        <a href="#" class="btn btn-purple">مشاهده</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <img src="https://picsum.photos/504/350" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Name 6</h5>
+                                        <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
+                                        <a href="#" class="btn btn-purple">مشاهده</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <img src="https://picsum.photos/503/350" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Name 7</h5>
+                                        <p class="card-text">توضیحات پروژه، نحوه کار و هدف از ایجاد پروژه.</p>
+                                        <a href="#" class="btn btn-purple">مشاهده</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -309,8 +364,7 @@
                         <button type="submit" class="btn btn-purple py-3 w-100">ارسال</button>
                     </form>
                     <!-- image -->
-                    <div class="col-lg-6 img-contact">
-                        <img src="https://picsum.photos/400" alt="image contact">
+                    <div class="col-lg-6 parallax">
                     </div>
                 </div>
             </div>
@@ -368,6 +422,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+    <!-- slider js library -->
+    <script src="./assets/splide-library/dist/js/splide.min.js"></script>
     <!-- javascript -->
     <script src="./assets/Js/javascript.js"></script>
 </body>

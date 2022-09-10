@@ -70,6 +70,19 @@ h2:after {
     background-color: var(--color-purple);
 }
 
+.parallax {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax.one {
+    background-image: url("https://picsum.photos/1280");
+    border-radius: 0;
+}
+
 /* ---------------------------       scrollbar         --------------------------- */
 ::-webkit-scrollbar {
     width: 5px;
@@ -303,16 +316,21 @@ footer i:hover {
     margin-bottom: 15px;
 }
 
-.img-contact {
-    padding: 0;
-    position: relative;
+.contact-box .parallax {
+    background-image: url("https://picsum.photos/1080");
+    border-radius: 8px 0 0 8px;
 }
 
-.img-contact img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-    transition: .3s;
+@media screen and (max-width:991px) {
+    .contact-box .parallax {
+        border-radius: 8px 8px 0 0;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .contact-box .parallax {
+        border-radius: 0;
+    }
 }
 
 .field {
@@ -341,4 +359,83 @@ textarea {
 .field:focus {
     border: 1px solid var(--color-purple);
     background-color: var(--color-white);
+}
+
+/* ---------------------------       Examples of works         --------------------------- */
+.splide {
+    height: 435px !important;
+    direction: ltr;
+}
+
+.splide__slide {
+    width: 250px;
+    height: 340px !important;
+    margin: 2px 5px;
+}
+
+.splide__slide .card {
+    height: 335px;
+}
+
+.splide__slide img {
+    border-radius: 8px 8px 0 0;
+}
+
+.splide__slide .card-body {
+    text-align: right;
+}
+
+.splide__slide .card-body .card-title {
+    text-align: center;
+}
+
+.splide__arrow.splide__arrow--next {
+    width: 200px;
+    height: 100%;
+    clip-path: ellipse(38% 50% at 100% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: .3s;
+    right: -10px;
+}
+
+.splide__arrow:hover.splide__arrow--next {
+    background-color: rgba(0, 0, 0, 0.39);
+    right: 0px;
+}
+
+.splide__arrow.splide__arrow--prev {
+    width: 200px;
+    height: 100%;
+    clip-path: ellipse(38% 50% at 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: .3s;
+    left: -10px;
+}
+
+.splide__arrow:hover.splide__arrow--prev {
+    background-color: rgba(0, 0, 0, 0.39);
+    left: 0px;
+
+}
+
+.splide__arrow svg {
+    fill: var(--color-purple);
+    margin: 20px;
+}
+
+.splide__arrow:hover svg {
+    fill: var(--color-white) !important;
+}
+
+.splide__pagination__page:hover {
+    background: var(--color-purple);
+    opacity: .4;
+}
+
+.splide__pagination__page.is-active {
+    background: var(--color-purple);
 }
