@@ -571,12 +571,18 @@ select option:checked {
 }
 
 .blog-icon a i {
-    text-decoration: none;
     background-color: var(--color-grey-input);
     margin: 10px 5px;
     padding: 10px 35px;
     font-size: 1.5em;
     color: var(--color-dark);
+    transition: .3s;
+}
+
+.blog-icon a i:hover {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    transform: translateY(-10px);
 }
 
 .parallax.tow {
