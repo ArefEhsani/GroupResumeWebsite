@@ -206,7 +206,6 @@ footer i:hover {
 }
 
 
-
 /* ---------------------------       Team Group         --------------------------- */
 #cards .card {
     min-height: 100%;
@@ -461,7 +460,6 @@ textarea {
 }
 
 /* ---------------------------       Blog         --------------------------- */
-/* search box */
 .search {
     position: relative;
     max-width: 600px;
@@ -470,21 +468,32 @@ textarea {
     margin-top: 50px;
 }
 
-.search form .input {
-    padding: 20px 15px;
-    padding-left: 40px;
-    max-width: 600px;
-    width: 100%;
-    height: 40px;
-    border: 4px solid var(--color-purple);
-    outline: none;
-    transition: .5s;
-    position: relative;
+.search .input-group {
+    border: 2px solid var(--color-purple);
 }
 
-.search form .input:focus {
-    box-shadow: 0 0 5px 1px var(--color-purple);
-    color: var(--color-purple);
+.search form input {
+    padding: 20px 15px;
+    height: 40px;
+    outline: none;
+}
+
+.search form input:focus,
+.search form select:focus {
+    border-color: var(--color-purple);
+    box-shadow: none;
+}
+
+.search form select option:hover {
+    background: #000 !important
+}
+
+.search .input-group-text {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding-right: 30px;
+    border-right: 2px solid var(--color-purple);
 }
 
 .search button[type=submit] {
@@ -496,6 +505,20 @@ textarea {
     left: 22px;
     font-size: 26px;
     color: var(--color-purple);
+}
+
+select option {
+    padding: 5px 10px;
+}
+
+select option:hover {
+    box-shadow: 0 0 10px 100px var(--color-purple) inset !important;
+    color: var(--color-white);
+    opacity: .7;
+}
+
+select option:checked {
+    box-shadow: 0 0 10px 100px var(--color-purple) inset !important;
 }
 
 .blog-post .card {
@@ -516,11 +539,17 @@ textarea {
 }
 
 .grouping-box {
-    width: 100%;
     height: 200px;
-    background-color: #763cff85;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.grouping-box span {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.4em;
 }

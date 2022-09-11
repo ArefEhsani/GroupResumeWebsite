@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تیم بنفش | بلاگ</title>
+    <title>بلاگ | کروناچیست؟</title>
     <!-- Bootstrap cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
@@ -50,24 +50,13 @@
     <main>
         <section>
             <div class="container">
-                <div class="row d-flex flex-column-reverse flex-sm-row">
-                    <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-7">
                         <!-- search box -->
                         <div class="search py-2 mb-3">
-                            <form class="input-group">
-                                <input type="text" class="form-control" placeholder="جستجو...">
-                                <select class="form-select" id="inputGroupSelect01" onfocus='this.size=2;'
-                                    onblur='this.size=0;' onchange='this.size=1; this.blur();'>
-                                    <option selected>دسته بندی...</option>
-                                    <option value="1">روزمره</option>
-                                    <option value="2">تکنولوژی</option>
-                                    <option value="3">کشاورزی</option>
-                                    <option value="4">جدید</option>
-                                    <option value="5">قدیمی</option>
-                                </select>
-                                <span class="input-group-text">
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                </span>
+                            <form name="search">
+                                <input type="text" class="input" placeholder="جستجو..." required>
+                                <button type="submit"><i class="fas fa-search"></i></button>
                             </form>
                         </div>
                         <!-- post -->
@@ -340,24 +329,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- grouping-box -->
-                    <div class="col-sm-5" style="margin-top: 60px;">
+                    <div class="col-5" style="margin-top: 60px;">
                         <div class="row g-2">
                             <div class="grouping-box">
-                                <img src="https://picsum.photos/1000" width="110%">
-                                <span> عضویت</span>
+                                عضویت
                             </div>
                             <div class="grouping-box">
-                                <img src="https://picsum.photos/1100" width="110%">
-                                <span> تماس با ما</span>
+                                دسته بندی
                             </div>
                             <div class="grouping-box">
-                                <img src="https://picsum.photos/1200" width="110%">
-                                <span> جدیدترین ها</span>
+                                دسته بندی
                             </div>
                             <div class="grouping-box">
-                                <img src="https://picsum.photos/1300" width="110%">
-                                <span> کرونا چیست ؟</span>
+                                دسته بندی
                             </div>
                         </div>
                     </div>
@@ -366,7 +350,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="bg-dark">
+    <footer class="bg-light">
         <div class="container">
             <!-- top footer -->
             <div class="row pt-5">
@@ -393,15 +377,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-8 text-muted">
+                <div class="col-8">
                     <h5>تیم بنفش</h5>
-                    <p class="small">
+                    <p class="small text-muted">
                         تیم بنقش طراحی وبسایت شما رو انجام میده با بهترین کیفیت، وبسایت خودتونو به بنفش بسپارید.
                     </p>
                 </div>
             </div>
             <!-- bottom fofter -->
-            <div class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top rounded-0">
+            <div class="d-flex bg-dark flex-wrap justify-content-between align-items-center p-3 mt-4 border-top">
                 <!-- copy right -->
                 <div class="col-md-4 d-flex align-items-center">
                     <span class="mb-3 mb-md-0 text-muted">© تمامی حقوق این سایت برای تیم بنفش محفوظ میباشد.</span>
