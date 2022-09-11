@@ -208,6 +208,13 @@ footer i:hover {
     font-size: 2em;
 }
 
+footer .nav-link {
+    padding: 0.1rem 0;
+}
+
+footer .nav-link {
+    color: gray;
+}
 
 /* ---------------------------       Team Group         --------------------------- */
 #cards .card {
