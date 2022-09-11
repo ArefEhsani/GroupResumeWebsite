@@ -25,6 +25,7 @@ body {
     --color-grey: #888;
     --color-grey-input: rgba(230, 230, 230, 0.6);
     --color-light: #eee;
+    --color-dark: #212529;
 }
 
 .bg-purple {
@@ -191,6 +192,8 @@ main {
 /* ---------------------------       Footer         --------------------------- */
 footer {
     border-radius: 0;
+    position: sticky;
+    top: 100%;
 }
 
 footer i {
@@ -524,6 +527,14 @@ select option:checked {
 .blog-post .card {
     margin: auto;
     max-width: 600px;
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: .3s;
+}
+
+.blog-post .card:hover {
+    color: var(--color-purple);
+    box-shadow: 0 0 5px var(--color-purple);
 }
 
 .blog-post .card img {
@@ -552,4 +563,24 @@ select option:checked {
     position: absolute;
     font-weight: bold;
     font-size: 1.4em;
+}
+
+/* ---------------------------       BlogPage         --------------------------- */
+.blog-icon a {
+    text-decoration: none;
+}
+
+.blog-icon a i {
+    text-decoration: none;
+    background-color: var(--color-grey-input);
+    margin: 10px 5px;
+    padding: 10px 35px;
+    font-size: 1.5em;
+    color: var(--color-dark);
+}
+
+.parallax.tow {
+    background-image: url("https://picsum.photos/1220");
+    border-radius: 0;
+    margin-top: 30px;
 }
