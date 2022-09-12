@@ -110,7 +110,7 @@ h2:after {
 header {
     position: fixed;
     width: 100vw;
-    z-index: 1;
+    z-index: 5;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.459);
     border-radius: 0;
 }
@@ -209,11 +209,17 @@ footer i:hover {
 }
 
 footer .nav-link {
-    padding: 0.1rem 0;
+    padding: 2px;
+    color: var(--color-grey);
+    transition: .1s;
 }
 
-footer .nav-link {
-    color: gray;
+footer .nav-link:hover {
+    color: var(--color-purple);
+}
+
+footer .nav-link i:hover {
+    font-size: 1.4em;
 }
 
 /* ---------------------------       Team Group         --------------------------- */
@@ -226,8 +232,7 @@ footer .nav-link {
 
 #cards .card:hover,
 #cards .card:hover .user-picture img {
-    outline: 2px solid #773cff;
-    box-shadow: 0 0 9px rgba(0, 0, 0, 0.459);
+    box-shadow: 0 0 9px var(--color-purple);
 }
 
 #cards .card .user-picture img {
@@ -398,12 +403,12 @@ textarea {
 
 .splide__slide {
     width: 250px;
-    height: 340px !important;
+    height: 330px !important;
     margin: 2px 5px;
 }
 
 .splide__slide .card {
-    height: 335px;
+    height: 305px;
 }
 
 .splide__slide img {
