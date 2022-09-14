@@ -400,32 +400,21 @@ textarea {
 
 /* ---------------------------       Examples of works         --------------------------- */
 #Examples_works .splide {
-    height: 340px !important;
+    height: 240px !important;
     direction: ltr;
 }
 
 #Examples_works .splide__slide {
     width: 250px;
-    height: 330px !important;
     margin: 2px 5px;
+    height: 200px !important;
 }
 
-#Examples_works .splide__slide .card {
-    height: 305px;
-    text-decoration: none;
-    color: var(--color-dark);
-}
-
-#Examples_works .splide__slide img {
-    border-radius: 8px 8px 0 0;
-}
-
-#Examples_works .splide__slide .card-body {
-    text-align: right;
-}
-
-#Examples_works .splide__slide .card-body .card-title {
-    text-align: center;
+#Examples_works .splide__slide a img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 8px;
 }
 
 #Examples_works .splide__arrow.splide__arrow--next {
