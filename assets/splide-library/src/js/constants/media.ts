@@ -1,1 +1,0 @@
-export const MEDIA_PREFERS_REDUCED_MOTION = '(prefers-reduced-motion: reduce)';
