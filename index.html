@@ -12,7 +12,7 @@
     <!-- icon fontawesome -->
     <script src="https://kit.fontawesome.com/4d4ae78d4a.js" crossorigin="anonymous"></script>
     <!-- slider js library -->
-    <link rel="stylesheet" href="./assets/splide-library/dist/css/themes/splide-sea-green.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'>
     <!-- css style -->
     <link rel="stylesheet" href="./assets/Css/style.css">
 </head>
@@ -261,7 +261,7 @@
             </div>
         </section>
         <!-- Examples of works -->
-        <section>
+        <section id="Examples_works">
             <div class="container py-2">
                 <!-- title -->
                 <h2 class="mt-5"> نمونه کار ها </h2>
@@ -445,9 +445,18 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
     <!-- slider js library -->
-    <script src="./assets/splide-library/dist/js/splide.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js'></script>
     <!-- javascript -->
-    <script src="./assets/Js/javascript.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            height: '10rem',
+            focus: 'center',
+            autoWidth: true,
+        });
+
+        splide.mount();
+    </script>
 </body>
 
 </html>

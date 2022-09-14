@@ -26,6 +26,9 @@ body {
     --color-grey-input: rgba(230, 230, 230, 0.6);
     --color-light: #eee;
     --color-dark: #212529;
+    --color-dark-hover: rgba(0, 0, 0, .7);
+    --current-image-height: 300px;
+    --thumbnails-track-height: 90px;
 }
 
 .bg-purple {
@@ -396,83 +399,80 @@ textarea {
 }
 
 /* ---------------------------       Examples of works         --------------------------- */
-.splide {
-    height: 435px !important;
+#Examples_works .splide {
+    height: 340px !important;
     direction: ltr;
 }
 
-.splide__slide {
+#Examples_works .splide__slide {
     width: 250px;
     height: 330px !important;
     margin: 2px 5px;
 }
 
-.splide__slide .card {
+#Examples_works .splide__slide .card {
     height: 305px;
     text-decoration: none;
     color: var(--color-dark);
 }
 
-.splide__slide img {
+#Examples_works .splide__slide img {
     border-radius: 8px 8px 0 0;
 }
 
-.splide__slide .card-body {
+#Examples_works .splide__slide .card-body {
     text-align: right;
 }
 
-.splide__slide .card-body .card-title {
+#Examples_works .splide__slide .card-body .card-title {
     text-align: center;
 }
 
-.splide__arrow.splide__arrow--next {
-    width: 200px;
-    height: 100%;
-    clip-path: ellipse(38% 50% at 100% 50%);
+#Examples_works .splide__arrow.splide__arrow--next {
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     transition: .3s;
     right: -10px;
 }
 
-.splide__arrow:hover.splide__arrow--next {
+#Examples_works .splide__arrow:hover.splide__arrow--next {
     background-color: rgba(0, 0, 0, 0.39);
     right: 0px;
 }
 
-.splide__arrow.splide__arrow--prev {
-    width: 200px;
-    height: 100%;
-    clip-path: ellipse(38% 50% at 0% 50%);
+#Examples_works .splide__arrow.splide__arrow--prev {
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     transition: .3s;
     left: -10px;
 }
 
-.splide__arrow:hover.splide__arrow--prev {
+#Examples_works .splide__arrow:hover.splide__arrow--prev {
     background-color: rgba(0, 0, 0, 0.39);
     left: 0px;
 
 }
 
-.splide__arrow svg {
+#Examples_works .splide__arrow svg {
     fill: var(--color-purple);
-    margin: 20px;
 }
 
-.splide__arrow:hover svg {
+#Examples_works .splide__arrow:hover svg {
     fill: var(--color-white) !important;
 }
 
-.splide__pagination__page:hover {
+#Examples_works .splide__pagination__page:hover {
     background: var(--color-purple);
     opacity: .4;
 }
 
-.splide__pagination__page.is-active {
+#Examples_works .splide__pagination__page.is-active {
     background: var(--color-purple);
 }
 
@@ -606,4 +606,179 @@ select option:checked {
 }
 
 /* ---------------------------       ExamplesWorkPage         --------------------------- */
-#ExamplesWorkPage {}
+#ExamplesWorkPage {
+    margin-top: 100px;
+}
+
+#ExamplesWorkPage .carousel {
+    max-width: 100%;
+}
+
+#ExamplesWorkPage .current-image {
+    margin-bottom: 1px;
+}
+
+#ExamplesWorkPage .current-image a {
+    display: block;
+    height: var(--current-image-height);
+    overflow: hidden;
+    position: relative;
+}
+
+#ExamplesWorkPage .current-image a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: box-shadow .1s linear;
+}
+
+#ExamplesWorkPage .current-image a:focus {
+    outline: 0;
+}
+
+#ExamplesWorkPage .current-image a:focus:before {
+    box-shadow: inset 0 0 0 1px var(--color-dark),
+        inset 0 0 0 4px var(--color-white);
+}
+
+#ExamplesWorkPage .current-image img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#ExamplesWorkPage .thumbnails-track {
+    position: relative;
+}
+
+#ExamplesWorkPage .arrow-wrapper {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--color-dark-hover);
+}
+
+#ExamplesWorkPage .previous-button-wrapper {
+    left: 0;
+}
+
+#ExamplesWorkPage .next-button-wrapper {
+    right: 0;
+}
+
+#ExamplesWorkPage .button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--color-dark-hover);
+    padding: 0;
+    margin: 0 1px;
+    flex: 0 0 25px;
+    height: 100%;
+    transition: all .2s linear;
+}
+
+#ExamplesWorkPage .button:hover {
+    background-color: rgba(0, 0, 0, .1);
+    color: var(--color-dark);
+}
+
+#ExamplesWorkPage .button:focus {
+    outline: none;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    opacity: .7;
+}
+
+#ExamplesWorkPage .button:disabled {
+    opacity: .3;
+}
+
+#ExamplesWorkPage .thumbnail {
+    flex: 0 0 var(--thumbnail-width);
+    margin-right: 1px;
+    position: relative;
+}
+
+#ExamplesWorkPage .thumbnail-button {
+    display: block;
+    padding: 0;
+    height: var(--thumbnails-track-height);
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    background: none;
+    background-color: rgba(0, 0, 0, .4);
+    transition: opacity .1s linear;
+}
+
+#ExamplesWorkPage .thumbnail-button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: box-shadow .1s linear;
+}
+
+#ExamplesWorkPage .thumbnail-button:focus {
+    outline: 0;
+}
+
+#ExamplesWorkPage .thumbnail-button:focus:before {
+    box-shadow: inset 0 0 0 1px var(--color-dark),
+        inset 0 0 0 4px var(--color-white);
+}
+
+#ExamplesWorkPage .thumbnail-button:focus img,
+#ExamplesWorkPage .thumbnail-button:hover img,
+#ExamplesWorkPage .thumbnail-button[aria-current="true"] img {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+#ExamplesWorkPage .thumbnail-button img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    opacity: .5;
+    filter: grayscale(.6);
+    transition: all .1s linear;
+}
+
+#ExamplesWorkPage .credits {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--color-dark);
+    text-decoration: none;
+    opacity: .7;
+}
+
+#ExamplesWorkPage .credits img {
+    height: 30px;
+    margin-left: 5px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+#ExamplesWorkPage .credits:hover,
+#ExamplesWorkPage .credits:focus {
+    opacity: 1;
+}
