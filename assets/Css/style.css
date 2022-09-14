@@ -264,6 +264,9 @@ footer .nav-link i:hover {
 
 
 /* ---------------------------       Member         --------------------------- */
+#member{
+    margin-top: 100px;
+}
 .member-picture {
     height: auto;
     background: url("https://picsum.photos/1280") center/cover;
